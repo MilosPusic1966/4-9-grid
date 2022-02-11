@@ -1,0 +1,9 @@
+C:\Users\smoki\Documents\Visual Studio 2012\Projects\4-9 grid\4-9-grid\4-9 grid\4-9 grid\bin\Debug\4-9 grid.exe.config
+C:\Users\smoki\Documents\Visual Studio 2012\Projects\4-9 grid\4-9-grid\4-9 grid\4-9 grid\bin\Debug\4-9 grid.exe
+C:\Users\smoki\Documents\Visual Studio 2012\Projects\4-9 grid\4-9-grid\4-9 grid\4-9 grid\bin\Debug\4-9 grid.pdb
+C:\Users\smoki\Documents\Visual Studio 2012\Projects\4-9 grid\4-9-grid\4-9 grid\4-9 grid\obj\Debug\4-9 grid.csprojResolveAssemblyReference.cache
+C:\Users\smoki\Documents\Visual Studio 2012\Projects\4-9 grid\4-9-grid\4-9 grid\4-9 grid\obj\Debug\_4_9_grid.Form1.resources
+C:\Users\smoki\Documents\Visual Studio 2012\Projects\4-9 grid\4-9-grid\4-9 grid\4-9 grid\obj\Debug\_4_9_grid.Properties.Resources.resources
+C:\Users\smoki\Documents\Visual Studio 2012\Projects\4-9 grid\4-9-grid\4-9 grid\4-9 grid\obj\Debug\4-9 grid.csproj.GenerateResource.Cache
+C:\Users\smoki\Documents\Visual Studio 2012\Projects\4-9 grid\4-9-grid\4-9 grid\4-9 grid\obj\Debug\4-9 grid.exe
+C:\Users\smoki\Documents\Visual Studio 2012\Projects\4-9 grid\4-9-grid\4-9 grid\4-9 grid\obj\Debug\4-9 grid.pdb
