@@ -39,14 +39,14 @@ namespace _4_9_grid
         }
         private void grid_populate()
         {
-            string tmp = "select id, ime+' '+prezime as ucenik, naziv as predmet, ocena from ocena join predmet on predmet.id = predmet_id join ucenik on ucenik.id = ucenik_id";
+            string tmp = "select ocena.id, ime+' '+prezime as ucenik, naziv as predmet, ocena from ocena join predmet on predmet.id = predmet_id join ucenik on ucenik.id = ucenik_id";
             SqlDataAdapter adapter = new SqlDataAdapter(tmp, veza);
             dt_ocena_j = new DataTable();
             adapter.Fill(dt_ocena_j);
             dataGridView1.DataSource = dt_ocena_j;
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.ReadOnly = true;
-
+            dataGridView1.Columns["id"].Visible = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -55,6 +55,7 @@ namespace _4_9_grid
             veza = new SqlConnection(CS);
             ucenik_populate();
             predmet_populate();
+            grid_populate();
         }
     }
 }
