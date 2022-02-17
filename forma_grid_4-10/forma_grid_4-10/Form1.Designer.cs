@@ -1,4 +1,4 @@
-﻿namespace _4_9_grid
+﻿namespace forma_grid_4_10
 {
     partial class Form1
     {
@@ -41,7 +41,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(57, 39);
+            this.comboBox1.Location = new System.Drawing.Point(111, 63);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 0;
@@ -49,14 +49,14 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(208, 39);
+            this.comboBox2.Location = new System.Drawing.Point(258, 63);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(143, 21);
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 1;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(381, 39);
+            this.textBox1.Location = new System.Drawing.Point(421, 64);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 2;
@@ -64,36 +64,35 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 76);
+            this.dataGridView1.Location = new System.Drawing.Point(34, 105);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(557, 203);
+            this.dataGridView1.Size = new System.Drawing.Size(561, 182);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CurrentCellChanged += new System.EventHandler(this.dataGridView1_CurrentCellChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(103, 296);
+            this.button1.Location = new System.Drawing.Point(139, 316);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Dodaj";
+            this.button1.Text = "Unesi";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(227, 296);
+            this.button2.Location = new System.Drawing.Point(258, 316);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Izmeni";
+            this.button2.Text = "Promeni";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(353, 296);
+            this.button3.Location = new System.Drawing.Point(377, 316);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 6;
@@ -105,7 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(581, 352);
+            this.ClientSize = new System.Drawing.Size(625, 351);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

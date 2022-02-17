@@ -44,7 +44,7 @@ namespace _4_9_grid
             dt_ocena = new DataTable();
             adapter.Fill(dt_ocena);
 
-            string tmp = "select ocena.id, ime+' '+prezime as ucenik, naziv as predmet, ocena from ocena join predmet on predmet.id = predmet_id join ucenik on ucenik.id = ucenik_id ORDER BY id";
+            string tmp = "select ocena.id, ime+' '+prezime as ucenik, naziv as predmet, ocena, ucenik_id, predmet_id from ocena join predmet on predmet.id = predmet_id join ucenik on ucenik.id = ucenik_id";
             adapter = new SqlDataAdapter(tmp, veza);
             dt_ocena_j = new DataTable();
             adapter.Fill(dt_ocena_j);
@@ -52,6 +52,8 @@ namespace _4_9_grid
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.ReadOnly = true;
             dataGridView1.Columns["id"].Visible = false;
+            dataGridView1.Columns["ucenik_id"].Visible = false;
+            dataGridView1.Columns["predmet_id"].Visible = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -70,11 +72,13 @@ namespace _4_9_grid
 
         private void dataGridView1_CurrentCellChanged(object sender, EventArgs e)
         {
-            if (dataGridView1.CurrentRow != null)
+            if (dataGridView1.Focused && dataGridView1.CurrentRow != null)
             {
                 broj = dataGridView1.CurrentRow.Index;
-                comboBox1.SelectedValue = dt_ocena.Rows[broj]["ucenik_id"].ToString();
-                comboBox2.SelectedValue = dt_ocena.Rows[broj]["predmet_id"].ToString();
+                // comboBox1.SelectedValue = dt_ocena.Rows[broj]["ucenik_id"].ToString();
+                comboBox1.SelectedValue = dataGridView1.Rows[broj].Cells["ucenik_id"].Value.ToString();
+                // comboBox2.SelectedValue = dt_ocena.Rows[broj]["predmet_id"].ToString();
+                comboBox2.SelectedValue = dataGridView1.Rows[broj].Cells["predmet_id"].Value.ToString();
                 textBox1.Text = dt_ocena.Rows[broj]["ocena"].ToString();
             }
         }
